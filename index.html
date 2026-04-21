@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>송태훈 · 포트폴리오 | 한양대학교 ERICA 기계공학과</title>
+  <meta name="description" content="한양대학교 ERICA 기계공학과 송태훈의 학술 포트폴리오. 나노표면·열전달·방산 응용 연구 로드맵 (2022–2026)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Inline SVG favicon: monogram T·H on navy -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b3d91'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-weight='600' font-size='36' text-anchor='middle' fill='%23e2c482'%3ET%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ========== Top utility strip ========== -->
+  <div class="topbar">
+    <div class="inner">
+      <span class="hy-chip">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 21V9l9-6 9 6v12"/><path d="M9 21V12h6v9"/>
+        </svg>
+        Hanyang University ERICA · Department of Mechanical Engineering
+      </span>
+      <span>BETTER Lab · 자연모사 열전달 연구실 · 학부연구생</span>
+    </div>
+  </div>
+
+  <!-- ========== Masthead ========== -->
+  <header class="masthead">
+    <div class="inner">
+      <div class="brand">
+        <div class="crest">
+          <!-- Custom SVG monogram: stylized T·H inside a seal -->
+          <svg width="44" height="44" viewBox="0 0 64 64" aria-label="Taehoon Song monogram">
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#0b3d91" stroke-width="1.5"/>
+            <circle cx="32" cy="32" r="26" fill="none" stroke="#c48e2b" stroke-width=".8"/>
+            <path d="M18 24h28M32 24v18" stroke="#0b3d91" stroke-width="3" stroke-linecap="square"/>
+            <path d="M20 46l6-10 6 10M38 36l6 10" stroke="#c48e2b" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="wordmark">
+          <div class="lab">Taehoon Song</div>
+          <div class="sub">송태훈 · Undergraduate Researcher</div>
+        </div>
+      </div>
+      <nav class="primary" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#courses">Coursework</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="inner">
+      <div class="hero-text">
+        <div class="eyebrow">Portfolio · 2022 — 2026</div>
+        <h1>
+          열과 유체, 그리고<br/>나노 표면의 경계에서.
+          <span class="en">Exploring heat, fluid and nano-engineered surfaces toward defense-grade thermal systems.</span>
+        </h1>
+        <p class="lede">
+          한양대학교 ERICA 기계공학과 4학년 <strong>송태훈</strong>입니다.
+          BETTER Lab(오준호 교수님) 학부연구생으로 활동하며,
+          <em>나노 표면 · 열전달 · 국방 응용</em>을 잇는 연구자의 길을 준비하고 있습니다.
+          입학부터 현재까지 쌓아 온 프로젝트·수강·연구 활동을 로드맵으로 정리했습니다.
+        </p>
+        <div class="meta">
+          <div>
+            <span class="k">Affiliation</span>
+            <span class="v">Hanyang University ERICA<br/>Dept. of Mechanical Engineering</span>
+          </div>
+          <div>
+            <span class="k">Research Lab</span>
+            <span class="v">BETTER Lab — Bio-inspired Energy &amp; Thermal Transport</span>
+          </div>
+          <div>
+            <span class="k">Status</span>
+            <span class="v">학부 4학년 (2026–1)<br/>자대 석박통합과정 진학 예정</span>
+          </div>
+          <div>
+            <span class="k">Focus</span>
+            <span class="v">Nano surfaces · Heat transfer<br/>Defense thermal systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <div class="portrait-frame">
+          <img class="portrait" src="assets/images/profile.jpg" alt="송태훈 프로필 사진"/>
+        </div>
+        <div class="portrait-caption">Taehoon Song · Class of 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="inner">
+      <div class="section-head reveal">
+        <div class="section-num">§ 01 / About</div>
+        <div>
+          <h2 class="section-title">
+            연구자를 준비하는 기계공학도
+            <span class="en">From undergraduate to a defense-oriented thermal researcher.</span>
+          </h2>
+          <p class="section-kicker">
+            학부 1학년부터 4학년 1학기까지, 기계공학의 기초에서 출발해
+            열·유체·설계 과목을 순차적으로 쌓아 왔습니다. 3학년부터는
+            BETTER Lab에서 학부연구생으로 Ansys Icepak·Fluent·CFX 기반 열유체 시뮬레이션을 수행하며,
+            자연모사 나노 표면 기술을 방산·열관리 시스템에 접목하는 문제의식을 키우고 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-grid reveal">
+        <div class="bio">
+          <p>
+            저는 공학 문제를 <strong>실험 · 해석 · 설계</strong> 세 축에서 동시에 다루는 엔지니어가 되고 싶습니다.
+            기계가공실습을 통해 선반·밀링을 직접 다뤘고, 기계설계 과목에서는 유체베어링 기구를 설계·제작했으며,
+            유체역학 텀프로젝트에서는 라디에이터 핀 배열에 따른 열효율을 분석했습니다.
+          </p>
+          <p>
+            최근에는 열시스템 설계 과목에서 <strong>판형 열교환기 설계 프로그램</strong>을 직접 개발했고,
+            유체기계 설계에서는 CFX를 이용해 <strong>축류형 유체기계 최적화</strong>에 도전하고 있습니다.
+            BETTER Lab에서는 <strong>자동차 건조로 CFD 해석</strong> 과제를 진행 중이며, Ansys Overset 기법을 학습하며
+            상변화 열전달 · 계면 현상의 해석 전략을 심화하고 있습니다.
+          </p>
+          <p>
+            장기적으로는 <strong>나노 구조 표면</strong>을 활용한 열전달 증진·응축·비등 제어 기술을
+            <strong>국방·항공 우주 시스템의 열관리</strong>에 응용하는 연구를 수행하고자 합니다.
+            이를 위해 2026년 하반기 자대 BETTER Lab 석박통합과정 진학을 준비 중입니다.
+          </p>
+        </div>
+
+        <div class="facts">
+          <dl>
+            <dt>Name</dt>
+            <dd>송태훈 (Song Taehoon)</dd>
+
+            <dt>University</dt>
+            <dd>한양대학교 ERICA 캠퍼스
+              <span class="secondary">Hanyang University ERICA · Ansan, South Korea</span>
+            </dd>
+
+            <dt>Major</dt>
+            <dd>기계공학과 · 4학년
+              <span class="secondary">B.S. in Mechanical Engineering (expected 2026)</span>
+            </dd>
+
+            <dt>Student ID</dt>
+            <dd>2022094448</dd>
+
+            <dt>Lab</dt>
+            <dd>BETTER Lab
+              <span class="secondary">자연모사 열전달 연구실 · 제5공학관 204·328·502호</span>
+            </dd>
+
+            <dt>Advisor</dt>
+            <dd>오준호 교수님
+              <span class="secondary">Prof. Junho Oh, Ph.D. (UIUC)</span>
+            </dd>
+
+            <dt>Next Step</dt>
+            <dd>자대 석박통합과정 진학 예정 (BETTER Lab)
+              <span class="secondary">Direct Ph.D. track starting 2026 Fall</span>
+            </dd>
+
+            <dt>Languages</dt>
+            <dd>한국어 · English · 日本語</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH INTERESTS ========== -->
+  <section id="research" class="alt-bg">
+    <div class="inner">
+      <div class="section-head reveal">
+        <div class="section-num">§ 02 / Research Interests</div>
+        <div>
+          <h2 class="section-title">
+            관심 분야
+            <span class="en">Bridging nano surfaces, thermal transport and defense engineering.</span>
+          </h2>
+          <p class="section-kicker">
+            자연모사 나노 구조 표면과 열전달 현상을 방산·국방 시스템의 열관리 문제에 적용하는
+            연구에 관심이 있습니다. 해석(CFD), 설계(CAD·프로그래밍), 실험(계측·가공)의
+            세 축을 모두 활용할 수 있는 연구 방향을 선호합니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="research-grid">
+        <div class="research-card reveal">
+          <div class="rc-num">01 / Interfacial &amp; Nano Surfaces</div>
+          <h3>나노 표면 열전달</h3>
+          <span class="rc-en">Nano-structured surfaces for phase-change heat transfer</span>
+          <p>
+            마이크로·나노 구조 표면을 이용한 비등·응축 제어,
+            자연모사 기반 초친수·초발수 표면의 열유체적 응용.
+          </p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="rc-num">02 / Thermal Systems</div>
+          <h3>열·유체 시스템 해석</h3>
+          <span class="rc-en">CFD for heat exchangers &amp; rotating machinery</span>
+          <p>
+            Ansys Fluent · Icepak · CFX 기반 열교환기, 축류형 유체기계,
+            자동차 건조로 등 산업 시스템의 수치 해석 및 최적화.
+          </p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="rc-num">03 / Defense Applications</div>
+          <h3>방산 응용 연구</h3>
+          <span class="rc-en">Thermal management for defense platforms</span>
+          <p>
+            고발열 전자장비·추진체의 열관리, 센서·전차·항공 플랫폼에
+            적용 가능한 나노 표면 기반 냉각 기술 연구 지향.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ROADMAP / TIMELINE ========== -->
+  <section id="roadmap">
+    <div class="inner">
+      <div class="section-head reveal">
+        <div class="section-num">§ 03 / Academic Roadmap</div>
+        <div>
+          <h2 class="section-title">
+            학부 로드맵 2022 — 2026
+            <span class="en">Four years of coursework, projects and research, mapped.</span>
+          </h2>
+          <p class="section-kicker">
+            1학년 입학 직후 <strong>합격수기 최우수상</strong>부터, 현재 BETTER Lab 학부연구생 활동까지.
+            각 학년별 대표 프로젝트·성취·연구 활동을 시간 순서로 배치했습니다.
+            로드맵 하단의 <strong style="color:#8a6217;">진행중</strong> 카드는 현재 동시에 수행 중인 프로젝트들입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline">
+
+        <!-- =============== YEAR 1 =============== -->
+        <div class="year-marker reveal">
+          <span class="badge">2022 <span class="kr">· 1학년 Freshman</span></span>
+        </div>
+
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag crimson">Award</span>
+              <span class="tag">Admission</span>
+            </div>
+            <h3>합격수기 최우수상</h3>
+            <div class="tl-sub">Best Admission Essay · Hanyang ERICA</div>
+            <p>
+              학생부 종합전형 합격수기로 <strong>최우수상</strong>을 수상했으며,
+              이듬해 한양대학교 공식 <strong>학생부 종합전형 가이드북</strong>에 합격수기가 게재되었습니다.
+            </p>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <div class="tl-row right reveal">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag">Activity</span>
+              <span class="tag">Kendo Club</span>
+            </div>
+            <h3>검도 동아리 활동</h3>
+            <div class="tl-sub">University Kendo Club · 2022</div>
+            <p>
+              체력과 집중력, 꾸준함의 기본을 다진 시기.
+              기초 과목(일반물리·일반화학·미적분)과 병행하여
+              교내 검도 동아리 활동을 수행.
+            </p>
+            <ul>
+              <li>기본기 루틴 · 단체 연습 참여</li>
+              <li>협업·규율 등 연구실 생활의 기초 역량 형성</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- =============== YEAR 2 =============== -->
+        <div class="year-marker reveal">
+          <span class="badge">2023 <span class="kr">· 2학년 Sophomore</span></span>
+        </div>
+
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag navy">Core Foundations</span>
+              <span class="tag">4대 역학</span>
+            </div>
+            <h3>기계공학 4대 역학 심화</h3>
+            <div class="tl-sub">Four pillars of mechanical engineering</div>
+            <p>
+              기계공학의 뼈대가 되는 <strong>고체역학 · 유체역학 · 열역학 · 동역학</strong>을
+              체계적으로 학습한 시기. 이후 모든 설계·해석·실험 프로젝트의 기반이 되었습니다.
+            </p>
+            <ul>
+              <li>유체역학 챕터별 필기·정리 (A4 200+ 페이지 수기 정리)</li>
+              <li>기초 실험과목을 통해 계측·보고서 작성 역량 확보</li>
+            </ul>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <!-- =============== YEAR 3 =============== -->
+        <div class="year-marker reveal">
+          <span class="badge">2024 <span class="kr">· 3학년 Junior</span></span>
+        </div>
+
+        <div class="tl-row right reveal">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag navy">Project</span>
+              <span class="tag">Fluid Mechanics</span>
+              <span class="tag">Term Project</span>
+            </div>
+            <h3>라디에이터 핀 열효율 분석</h3>
+            <div class="tl-sub">Effect of fin spacing &amp; count on radiator efficiency</div>
+            <p>
+              유체역학 응용설계(유응설) 텀 프로젝트로
+              <strong>라디에이터 핀의 갯수·간격</strong>에 따른 방열 효율을 이론·해석 관점에서 비교 분석하였습니다.
+            </p>
+            <ul>
+              <li>열전달 기본식 기반 모델링 · 파라메트릭 스터디</li>
+              <li>정식 보고서 제출 및 발표</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag">Hands-on</span>
+              <span class="tag">Manufacturing</span>
+            </div>
+            <h3>기계가공실습 · 선반 가공</h3>
+            <div class="tl-sub">Machine-shop practice · Lathe operation</div>
+            <p>
+              <strong>선반기계 가공방법</strong>을 직접 숙지하며 도면 → 가공 → 측정의 흐름을 체득.
+              이후 캡스톤·기계설계 프로젝트에서 부품을 직접 가공·조립하는 기반이 됨.
+            </p>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <div class="tl-row right reveal">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag navy">Project</span>
+              <span class="tag">Machine Design</span>
+            </div>
+            <h3>유체베어링 장치 설계·제작</h3>
+            <div class="tl-sub">Hydrodynamic bearing demonstrator</div>
+            <p>
+              기계설계 과목 프로젝트로 <strong>유체베어링을 구현하는 간단한 장치를 직접 제작</strong>하고,
+              유체 윤활·점성 이론과 실제 거동을 연결해 학습.
+            </p>
+            <ul>
+              <li>컨셉 설계 → CAD 모델링 → 가공·조립 → 시연</li>
+              <li>유체베어링 이론 정리 및 설계 기준 도출</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag gold">Research</span>
+              <span class="tag">BETTER Lab</span>
+              <span class="tag">Ansys Icepak</span>
+            </div>
+            <h3>BETTER Lab 학부연구생 합류</h3>
+            <div class="tl-sub">Undergraduate Research @ BETTER Lab (Prof. Junho Oh)</div>
+            <p>
+              오준호 교수님과의 미팅을 통해 <strong>진로 방향을 확정</strong>하고,
+              BETTER Lab 학부연구생으로 연구 활동을 시작.
+            </p>
+            <ul>
+              <li>개인 미팅 기반 로드맵 설계 (Icepak 학습 계획 수립)</li>
+              <li><strong>Ansys Icepak</strong> 시뮬레이션 학습 — 전자장비 열관리 기초</li>
+              <li>자동차 건조로 과제 대비 <strong>Ansys Overset Mesh</strong> 학습 착수</li>
+            </ul>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <div class="tl-row right reveal">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag crimson">Award</span>
+              <span class="tag">Peer Tutoring</span>
+            </div>
+            <h3>한양 또래 튜터링 · 고체역학</h3>
+            <div class="tl-sub">Peer Tutor · Solid Mechanics (Sophomores)</div>
+            <p>
+              한 학년 아래 후배들을 대상으로 <strong>고체역학 또래 튜터링</strong>을 진행하고,
+              우수 튜터로 <strong>수상</strong>까지 이어졌습니다.
+            </p>
+            <ul>
+              <li>주차별 개념 정리·문제풀이 세션 운영</li>
+              <li>후배 4–5명 대상 멘토링 · 성적 향상 확인</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag navy">Capstone</span>
+              <span class="tag">Product Design</span>
+            </div>
+            <h3>우산 빗물 탈수기 · 캡스톤 설계 착수</h3>
+            <div class="tl-sub">Umbrella rain-water extractor · Capstone design phase</div>
+            <p>
+              공공장소에서 우산 빗물로 인한 불편을 해소하는 <strong>우산털이 장치</strong>를 캡스톤 주제로 선정.
+              3학년 말부터 <strong>설계·고안 단계</strong>를 진행해 4학년 제작 단계로 이어짐.
+            </p>
+            <ul>
+              <li>시장·선행기술 조사 · 사용자 시나리오 정의</li>
+              <li>구동 메커니즘 후보안 · 개념 설계 도면화</li>
+            </ul>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <!-- =============== YEAR 4 — CURRENT =============== -->
+        <div class="year-marker current reveal">
+          <span class="badge">2026 — 1 <span class="kr">· 4학년 1학기 (현재)</span></span>
+        </div>
+
+        <div class="tl-row right reveal">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag navy">Project</span>
+              <span class="tag">Thermal System Design</span>
+              <span class="tag">Software</span>
+            </div>
+            <h3>판형 열교환기 설계 프로그램 개발</h3>
+            <div class="tl-sub">Plate Heat Exchanger (PHE) design tool</div>
+            <p>
+              열시스템 설계 과목 과제로 <strong>판형 열교환기를 자동 설계·평가하는 프로그램</strong>을 직접 제작.
+              형상·유량·온도 조건을 입력하면 압력강하·열전달계수·필요 판 수를 산출하도록 구현했습니다.
+            </p>
+            <ul>
+              <li>Excel/VBA 기반 계산 엔진 · <code>PHE_Design_Final.xlsm</code></li>
+              <li>상관식 라이브러리 (Chevron · Martin) 내장</li>
+              <li>설계 변수 민감도 분석 기능 포함</li>
+            </ul>
+            <div class="tl-media">
+              <img src="assets/images/phe2.png" alt="판형 열교환기 설계 프로그램 인터페이스 스크린샷"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag">Career</span>
+              <span class="tag">Seminar</span>
+            </div>
+            <h3>커리어 FIT 포트폴리오 제작</h3>
+            <div class="tl-sub">Career portfolio · Career Seminar coursework</div>
+            <p>
+              취업진로 세미나 과제로 자신의 커리어 로드맵을 정리한 <strong>커리어 FIT 포트폴리오</strong>를 제작.
+              연구자 트랙(석박통합과정 → 방산 분야 R&amp;D)을 중심으로 구체적 타임라인을 설계.
+            </p>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <!-- ONGOING BLOCK -->
+        <div class="tl-row right reveal ongoing">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="ongoing-badge"><span class="live-dot"></span> In Progress · 진행중</div>
+            <div class="tag-row">
+              <span class="tag gold">Capstone</span>
+              <span class="tag">Fabrication</span>
+            </div>
+            <h3>우산털이 장치 · 캡스톤 제작</h3>
+            <div class="tl-sub">Umbrella rain-water extractor — build phase</div>
+            <p>
+              3학년 때 설계한 우산털이 장치를 실제로 <strong>제작·검증</strong>하는 단계.
+              구동부 · 브러쉬부 · 배수부 통합 시제품을 조립하고 성능을 실측할 예정입니다.
+            </p>
+            <ul>
+              <li>기구부 가공 · 전동기 선정 · 제어 회로 통합</li>
+              <li>탈수율 · 소음 · 내구 성능 실험 계획</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-row left reveal ongoing">
+          <div class="tl-card">
+            <div class="ongoing-badge"><span class="live-dot"></span> In Progress · 진행중</div>
+            <div class="tag-row">
+              <span class="tag gold">Project</span>
+              <span class="tag">CFX</span>
+              <span class="tag">Optimization</span>
+            </div>
+            <h3>축류형 유체기계 최적화 · CFX</h3>
+            <div class="tl-sub">Axial-flow turbomachinery optimization with Ansys CFX</div>
+            <p>
+              유체기계설계 과목 프로젝트. <strong>Ansys CFX</strong>를 이용하여
+              축류형 팬/펌프의 블레이드 형상·피치·허브비에 따른 성능을 수치해석하고 최적화합니다.
+            </p>
+            <ul>
+              <li>Baseline 블레이드 CFD 해석 · 성능 곡선 확보</li>
+              <li>파라메트릭 스터디 기반 형상 최적화 수행 중</li>
+              <li>총·정압효율·NPSH 등 주요 지표 평가</li>
+            </ul>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+        <div class="tl-row right reveal ongoing">
+          <div class="tl-node"><span class="dot"></span></div>
+          <div class="tl-card">
+            <div class="ongoing-badge"><span class="live-dot"></span> In Progress · 진행중</div>
+            <div class="tag-row">
+              <span class="tag gold">Research</span>
+              <span class="tag">BETTER Lab</span>
+              <span class="tag">Ansys Fluent</span>
+            </div>
+            <h3>자동차 건조로 CFD 해석 · 학부연구생 과제</h3>
+            <div class="tl-sub">Automotive paint-drying oven simulation @ BETTER Lab</div>
+            <p>
+              BETTER Lab 학부연구생 과제로 <strong>자동차 도장 건조로</strong>의 열·유동 해석을 수행 중.
+              Overset Mesh 기법을 활용해 차체 이동 조건을 반영하고,
+              상변화·대류 열전달 기반의 건조 효율을 평가합니다.
+            </p>
+            <ul>
+              <li>Overset · Dynamic Mesh 전략 수립</li>
+              <li>상변화 열전달 CFD 이론 정리·적용</li>
+              <li>2026년 3월 기준 중간 진행보고 완료</li>
+            </ul>
+            <div class="tl-media">
+              <img src="assets/images/dryer1.jpg" alt="자동차 건조로 과제 관련 연구 자료"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-row left reveal ongoing">
+          <div class="tl-card">
+            <div class="ongoing-badge"><span class="live-dot"></span> In Progress · 진행중</div>
+            <div class="tag-row">
+              <span class="tag gold">Teaching</span>
+              <span class="tag">Peer Tutoring</span>
+            </div>
+            <h3>유체역학 응용설계 튜터링</h3>
+            <div class="tl-sub">Peer Tutor · Applied Fluid Mechanics Design</div>
+            <p>
+              후배 학년 대상 <strong>유체역학 응용설계</strong> 또래 튜터링을 주 단위로 운영 중.
+              라디에이터 핀 프로젝트·유체베어링 경험을 교안에 녹여, 개념 → 설계 흐름 중심으로 지도.
+            </p>
+          </div>
+          <div class="tl-node"><span class="dot"></span></div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ========== COURSEWORK ========== -->
+  <section id="courses" class="alt-bg">
+    <div class="inner">
+      <div class="section-head reveal">
+        <div class="section-num">§ 04 / Coursework &amp; Achievements</div>
+        <div>
+          <h2 class="section-title">
+            수강 과목 · 성취
+            <span class="en">Subjects studied and awards received from 2022 to 2026.</span>
+          </h2>
+          <p class="section-kicker">
+            4대 역학을 중심으로 열유체 계열 심화·설계·실습 과목을 집중 수강했습니다.
+            아래는 학년별 대표 과목과 수상 · 인정 내역입니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="courses-wrap reveal">
+        <div class="course-col">
+          <h4>1학년 · 2022</h4>
+          <ul>
+            <li>일반물리학 I·II<span class="en">General Physics</span></li>
+            <li>일반화학 <span class="en">General Chemistry</span></li>
+            <li>미분적분학 I·II <span class="en">Calculus</span></li>
+            <li>공학설계입문 <span class="en">Intro to Engineering Design</span></li>
+            <li>프로그래밍언어 <span class="en">Programming Fundamentals</span></li>
+          </ul>
+        </div>
+
+        <div class="course-col">
+          <h4>2학년 · 2023</h4>
+          <ul>
+            <li>고체역학 <span class="en">Solid Mechanics</span></li>
+            <li>유체역학 <span class="en">Fluid Mechanics</span></li>
+            <li>열역학 <span class="en">Thermodynamics</span></li>
+            <li>동역학 <span class="en">Dynamics</span></li>
+            <li>공학수학 I·II <span class="en">Engineering Mathematics</span></li>
+          </ul>
+        </div>
+
+        <div class="course-col">
+          <h4>3학년 · 2024</h4>
+          <ul>
+            <li>열전달 <span class="en">Heat Transfer</span></li>
+            <li>기계설계 <span class="en">Machine Design</span></li>
+            <li>기계가공실습 <span class="en">Machine Shop Practice</span></li>
+            <li>유체역학 응용설계 <span class="en">Applied Fluid Mechanics Design</span></li>
+            <li>CAD/CAE <span class="en">Computer-Aided Design</span></li>
+            <li>캡스톤 설계 I <span class="en">Capstone Design I</span></li>
+          </ul>
+        </div>
+
+        <div class="course-col">
+          <h4>4학년 · 2025–2026</h4>
+          <ul>
+            <li>열시스템 설계 <span class="en">Thermal System Design</span></li>
+            <li>유체기계 설계 <span class="en">Fluid Machinery Design</span></li>
+            <li>캡스톤 설계 II <span class="en">Capstone Design II</span></li>
+            <li>취업진로 세미나 <span class="en">Career &amp; Professional Seminar</span></li>
+            <li>기계공학 특론 <span class="en">Advanced Topics in ME</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Awards strip -->
+      <div class="reveal" style="margin-top:56px; border-top:1px solid var(--rule); padding-top:32px;">
+        <h3 style="font-family:var(--serif-en); font-weight:500; font-size:22px; color:var(--hy-navy-ink); margin:0 0 18px;">
+          Honors &amp; Recognitions
+        </h3>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px;">
+          <div style="padding:18px; background:#fff; border-left:3px solid var(--hy-crimson);">
+            <div style="font-family:var(--mono); font-size:10.5px; color:var(--ink-mute); letter-spacing:.18em;">2022</div>
+            <div style="margin-top:6px; font-weight:600; color:var(--hy-navy-ink);">합격수기 최우수상</div>
+            <div style="color:var(--ink-soft); font-size:13.5px; margin-top:4px; line-height:1.55;">
+              다음 해 학생부 종합전형 가이드북 수록
+            </div>
+          </div>
+          <div style="padding:18px; background:#fff; border-left:3px solid var(--hy-crimson);">
+            <div style="font-family:var(--mono); font-size:10.5px; color:var(--ink-mute); letter-spacing:.18em;">2024</div>
+            <div style="margin-top:6px; font-weight:600; color:var(--hy-navy-ink);">한양 또래 튜터링 수상</div>
+            <div style="color:var(--ink-soft); font-size:13.5px; margin-top:4px; line-height:1.55;">
+              고체역학 튜터 · 후배 멘토링
+            </div>
+          </div>
+          <div style="padding:18px; background:#fff; border-left:3px solid var(--hy-gold);">
+            <div style="font-family:var(--mono); font-size:10.5px; color:var(--ink-mute); letter-spacing:.18em;">2024 —</div>
+            <div style="margin-top:6px; font-weight:600; color:var(--hy-navy-ink);">BETTER Lab 학부연구생</div>
+            <div style="color:var(--ink-soft); font-size:13.5px; margin-top:4px; line-height:1.55;">
+              오준호 교수님 지도 · 현재 활동 중
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / FOOTER ========== -->
+  <section id="contact" class="dark-bg">
+    <div class="inner">
+      <div class="section-head reveal">
+        <div class="section-num">§ 05 / Contact</div>
+        <div>
+          <h2 class="section-title">
+            Let's connect.
+            <span class="en">For collaboration, research inquiries or a coffee on campus.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <h3>Song Taehoon · 송태훈</h3>
+          <dl>
+            <dt>Affiliation</dt>
+            <dd>
+              한양대학교 ERICA 기계공학과<br/>
+              <span style="color:#a9b8d6;">Hanyang University ERICA — Dept. of Mechanical Engineering</span>
+            </dd>
+
+            <dt>Lab</dt>
+            <dd>
+              BETTER Lab (자연모사 열전달 연구실)<br/>
+              <span style="color:#a9b8d6;">Advisor · Prof. Junho Oh</span>
+            </dd>
+
+            <dt>Location</dt>
+            <dd>
+              경기도 안산시 상록구 한양대학로 55<br/>
+              한양대학교 ERICA · 제5공학관
+            </dd>
+
+            <dt>Lab Web</dt>
+            <dd><a href="https://better.hanyang.ac.kr" target="_blank" rel="noopener">better.hanyang.ac.kr ↗</a></dd>
+
+            <dt>Next</dt>
+            <dd>BETTER Lab 석박통합과정 진학 예정 (2026)</dd>
+          </dl>
+        </div>
+
+        <div style="align-self:center;">
+          <div style="font-family:var(--serif-en); font-style:italic; font-size:20px; color:#c9d5ec; line-height:1.6;">
+            "Engineering Better Human Life —<br/>
+            열과 유체, 그리고 표면의 세계에서<br/>
+            더 나은 공학을 짓겠습니다."
+          </div>
+          <div style="margin-top:28px; font-family:var(--mono); font-size:11px; letter-spacing:.22em; color:#7f8ba8;">
+            SONG TAEHOON · 2022094448 · CLASS OF 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <div>© 2026 Song Taehoon · Undergraduate Portfolio · Hanyang University ERICA</div>
+      <div>
+        Built for <em>기계공학특론 포트폴리오 사이트 과제</em> · Designed &amp; coded 2026.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection observer — fade sections in as they enter viewport
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Smooth nav active-section indication
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav.primary a');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY + 140;
+      let current = '';
+      sections.forEach(s => {
+        if (y >= s.offsetTop) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--hy-navy-ink)' : '';
+      });
+    }, { passive: true });
+  </script>
+</body>
+</html>
