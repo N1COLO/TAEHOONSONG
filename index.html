@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Song Taehoon — Mechanical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -667,12 +667,24 @@
   </footer>
 
   <script>
-    // Reveal on scroll
+    // Reveal on scroll — with immediate fallback
     const reveals = document.querySelectorAll('.reveal');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-    }, { threshold: 0.08 });
-    reveals.forEach(el => io.observe(el));
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => io.observe(el));
+      // Fallback: show all after 2s in case observer never fires
+      setTimeout(() => { reveals.forEach(el => el.classList.add('visible')); }, 2000);
+    } else {
+      // No IntersectionObserver support — show everything immediately
+      reveals.forEach(el => el.classList.add('visible'));
+    }
   </script>
 
 </body>
