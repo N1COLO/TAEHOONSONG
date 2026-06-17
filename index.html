@@ -744,14 +744,57 @@
               <span class="tag">CFX</span>
               <span class="tag">Optimization</span>
             </div>
+        <!-- 축류형 유체기계 최적화 (완료) -->
+        <div class="tl-row left reveal">
+          <div class="tl-card">
+            <div class="tag-row">
+              <span class="tag gold">Project</span>
+              <span class="tag">CFX</span>
+              <span class="tag">Optimization</span>
+            </div>
             <h3>축류형 유체기계 최적화 · CFX</h3>
-            <div class="tl-sub">Axial-flow turbomachinery optimization with Ansys CFX</div>
-            <p>유체기계설계 과목 프로젝트. <strong>Ansys CFX</strong>를 이용하여 축류형 팬/펌프의 블레이드 형상·피치·허브비에 따른 성능을 수치해석하고 최적화합니다.</p>
+            <div class="tl-sub">Axial-flow pump optimization with Ansys CFX · DOE + Kriging surrogate model</div>
+            <p>
+              유체기계설계 과목 프로젝트로 <strong>Ansys CFX</strong>를 이용해 축류형 유체기계의 성능을 최적화했습니다.
+              목표는 <strong>Head 37 m 이상</strong>과 <strong>정적 효율 80% 이상</strong>이었으며,
+              고정 운전조건(질량유량 97.22 kg/s, 1,250 RPM, Water, SST k-ω)에서
+              블레이드 수, 출각 β₂, TE 두께, Tip Clearance, Wrap Angle을 설계 변수로 두고 최적화를 수행했습니다.
+            </p>
             <ul>
-              <li>Baseline 블레이드 CFD 해석 · 성능 곡선 확보</li>
-              <li>파라메트릭 스터디 기반 형상 최적화 수행 중</li>
-              <li>총·정압효율·NPSH 등 주요 지표 평가</li>
+              <li><strong>최적화 절차:</strong> 격자 독립성 검토 → 베이스라인 CFD → DOE 50 Case → 최적점 근방 15 Case 추가 → Kriging 대리모델 구축 → 최종 CFD 검증</li>
+              <li><strong>샘플 구성:</strong> 블레이드 수 5~9 범위에서 Latin Hypercube Sampling 기반으로 50개 DOE를 구성하고, 추가 15개 샘플로 총 65개 CFD 데이터를 확보</li>
+              <li><strong>핵심 변수:</strong> 블레이드 출각 β₂, 블레이드 개수 N, Tip Clearance, TE 형상·두께, Wrap Angle</li>
+              <li><strong>대리모델 최적화:</strong> 65개 CFD 결과를 기반으로 Kriging 모델을 만들고 5,000개 설계 조합을 예측한 뒤 Differential Evolution으로 최적점 탐색</li>
+              <li><strong>최종 설계:</strong> N=7, β₂=35°, Wrap=121.85°, Tip=0.082 mm, Thick=2.50 mm</li>
+              <li><strong>최종 검증 결과:</strong> CFD 기준 Head 37.84 m, Static Efficiency 72.57% — Head 목표를 달성했고, Kriging 예측 오차는 모든 검증 케이스에서 0.5% 이내</li>
+              <li><strong>해석 인사이트:</strong> 블레이드 수 증가 시 Head는 상승하지만 SEff는 감소하는 trade-off를 확인했고, 목표 Head를 만족하는 조건 중 N=7이 가장 균형적인 설계로 선정됨</li>
             </ul>
+            <div class="tl-gallery">
+              <figure>
+                <img src="assets/images/seukeurinsyas-2026-06-17-130212-7.jpg" alt="축류형 유체기계 프로젝트 개요 및 설계 목표" loading="lazy"/>
+                <figcaption>Fig. 1 · 프로젝트 개요 — Head 37 m, Static Efficiency 80% 목표와 고정 해석 조건</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/seukeurinsyas-2026-06-17-130240-5.jpg" alt="설계 변수 선정 1" loading="lazy"/>
+                <figcaption>Fig. 2 · 핵심 설계 변수 선정 — β₂, 블레이드 개수, Tip Clearance, TE 형상 및 두께</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/seukeurinsyas-2026-06-17-130119-2.jpg" alt="설계 변수 선정 2" loading="lazy"/>
+                <figcaption>Fig. 3 · Wrap Angle 선정 근거와 저속·고유량 조건에서의 유동 안정성 고려</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/seukeurinsyas-2026-06-17-130146-3.jpg" alt="최적화 전략 5단계 프로세스" loading="lazy"/>
+                <figcaption>Fig. 4 · 최적화 전략 — DOE, CFD, Kriging, Optimizer, 최종 검증의 5단계 프로세스</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/seukeurinsyas-2026-06-17-130153-4.jpg" alt="65개 CFD 샘플과 Kriging 예측 분포" loading="lazy"/>
+                <figcaption>Fig. 5 · 65개 CFD 샘플 기반 Head–SEff 분포와 Kriging 예측 최적점 탐색</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/images/seukeurinsyas-2026-06-17-130158-6.jpg" alt="Kriging 대리모델 및 CFD 검증 결과" loading="lazy"/>
+                <figcaption>Fig. 6 · Kriging 대리모델 검증 — 예측값과 CFD 실측값 비교, 오차 0.5% 이내</figcaption>
+              </figure>
+            </div>
           </div>
           <div class="tl-node"><span class="dot"></span></div>
         </div>
