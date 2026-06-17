@@ -704,12 +704,18 @@ section .inner { max-width: var(--maxw); margin: 0 auto; }
 }
 
 /* ========== Reveal animations ========== */
+/* 기본값: 항상 보임 (JS가 작동 안 해도 안전) */
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* JS가 로드되면 js-reveal 클래스를 html에 추가, 그때만 애니메이션 적용 */
+.js-reveal .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity .75s ease, transform .75s ease;
 }
-.reveal.visible {
+.js-reveal .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
